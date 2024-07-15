@@ -11,7 +11,8 @@ if lev1_opt== "1":
 
 elif lev1_opt== "2":
       scrolls= +1 
-      print("Mario happily walks on the sunny path. He finds some helpful power-ups along the way and safely makes it to the next part of his journey. Mario continues his adventure!")
+      print("Mario happily walks on the sunny path. He finds some helpful power-ups along the way and safely makes it to the next part of his journey. Mario continues his adventure!\n")
+      print("**YOU NOW HAVE  " + str(scrolls) + "  MAGIC SCROLL**")
 
 elif lev1_opt== "3":
      
