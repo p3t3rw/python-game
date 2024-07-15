@@ -55,14 +55,14 @@ def level3(scrolls):
 
     lev3_opt = input("MARIO escapes the cave unharmed  he see’s the castle in the distance.  It is grand and pink, but there’s something wrong. There’s nobody there everything quite it seems abandoned. He listens carefully and can here a faint voice in the distance shouting help. What does MARIO do next?\n1.AVOID THE CASTLE\n2. APPOROCH THE CASTLE DIRECTLY \n3.ACT CAUTIOUSLY AND TRY TO FIND A DIFFERT WAY IN")
     if lev3_opt == "1":
-        print("")
+        print("Mario decides to avoid the castle and look for another route. Unfortunately, this decision leads him away from his goal, and he fails to complete his quest.")
         print("***GAME OVER***")
         return scrolls, False
     elif lev3_opt == "2":
-        print("Story: Found hidden scroll ")
+        print("Mario bravely walks up to the main gate and confronts Bowser directly. After a tough battle, Mario defeats Bowser and wins the game. Mario has successfully completed his quest!")
         return scrolls + 1, True
     elif lev3_opt == "3":
-        print("WIN: Mario successfully enters the castle")
+        print("Mario carefully searches the castle's surroundings. His caution pays off! He discovers a hidden scroll tucked away in a secret alcove. The scroll contains valuable information about the castle's layout. Using this knowledge, Mario finds a secret entrance, confronts Bowser, and defeats him. Mario wins the game and completes his quest with the added bonus of finding the hidden scroll!")
         return scrolls, True
     else:
         print("Invalid input. Game over.")
@@ -71,7 +71,7 @@ def level3(scrolls):
 def end(scrolls):
     print(f"Congratulations! You've completed Mario's adventure with {scrolls} scroll(s)!")
     if scrolls == 3:
-        print("SECRET ENDING: You've collected all three scrolls and unlocked the secret ending!")
+        print("Wow! Not only did you win, but you also found the secret scroll!\nYou're like the Indiana Jones of the Mushroom Kingdom. So fancy!\nMario's now equipped with knowledge beyond measure... not that he'll use it\nThe Princess is extra grateful this time, and so are we. For real\nEnjoy your scroll and your bragging rights. You're a true hero... until next time!\nThanks for playing! You've set a new bar... but don't get cocky.")
     elif scrolls > 0:
         print(f"You found {scrolls} scroll(s). Try to find all 3 for a secret ending!")
     else:
