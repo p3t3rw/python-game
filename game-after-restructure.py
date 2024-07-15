@@ -19,8 +19,8 @@ def game():
 def start():
     print("\nYOU ARE MARIO STORY 12345")
 
-def level1(scrolls, mario_alive):
-    lev1_opt = input("Fork in the Road: Mario stops at a split in the road. He sees three different paths ahead: On the left, a foggy path leads into a dark forest. Strange sounds come from the mist, making Mario wonder what's hiding there. On the right, a bright, sunny path goes over green hills. It looks nice, with pretty flowers and shiny coins, but maybe it's too good to be true? In the middle, an odd path has old stones with weird marks on them. The air feels funny here, like there might be magic around. Each path looks interesting but could be dangerous too. Which way should Mario go? Into the spooky fog, along the sunny hills, or down the strange middle path?\n1.Take the foggy path into the dark forest\n2.Follow the sunny path over the green hills\n3.Choose the middle path with the strange stones\n")
+def level1(scrolls):
+    lev1_opt = input("Fork in the Road: Mario stops at a split in the road. He sees three different paths ahead: On the left, a foggy path leads into a dark forest. Strange sounds come from the mist, making Mario wonder what's hiding there. On the right, a bright, sunny path goes over green hills. It looks nice, with pretty flowers and shiny coins, but maybe it's too good to be true? In the middle, an odd path has old stones with weird marks on them. The air feels funny here, like there might be magic around. Each path looks interesting but could be dangerous too. Which way should Mario go? Into the spooky fog, along the sunny hills, or down the strange middle path?\n1.TAKE THE FOOGY PATH INTO THE DARK FOREST\n2.FOLLOW THE SUNNY PATH OVER THE GREEN HILLS\n3.CHOOSE THE MIDDLE PATH WITH THE STRANGE STONES\n")
 
     if lev1_opt == "1":
         print("Mario walks into the thick fog. He can't see where he's going and suddenly falls into a deep pit. Game Over!")
@@ -36,11 +36,8 @@ def level1(scrolls, mario_alive):
         print("Invalid choice. Game Over.")
         return scrolls, False
 
-def level2(scrolls, mario_alive):
-    lev2intro = "\nMario has now reached the mysterious cave,\nthere is a large pit to his left with a  \ntunnel  to safety on the other side, Mario \nenters the MYSTERIOUS CAVE TO HIS his left \nthere is a pit, beyond that an exit to the \ndark forest. straight ahead he is faced is \nwith THE MIGHTY BOWSER. standing in front \nof a CHEST OF TREASURE and beyond that a tunnel \nthrough the mountain to the leading to the \nCASTLE.BOWSER turns and looks at MARIO \nhead down snorting swiping his left foot behind \nhim suddenly BOWSER charges at Mario like a raging bull \n \nWHAT DOES MARIO DO NEXT?\nANSWER 1,2 OR 3 "
-    
-    print(lev2intro)
-    lev2_opt = input("\n***1.JUMP OVER THE PIT TO SAFETY*** \n\n***2.USE HIS MUSHROOM POWER TO CHARGE BACK AT BOWSER***\n\n***3.JUMP ON BOWSERS HEAD***\n")
+def level2(scrolls):
+    lev2_opt = input("\nMario has now reached the mysterious cave,\nthere is a large pit to his left with a  \ntunnel  to safety on the other side, Mario \nenters the MYSTERIOUS CAVE TO HIS his left \nthere is a pit, beyond that an exit to the \ndark forest. straight ahead he is faced is \nwith THE MIGHTY BOWSER. standing in front \nof a CHEST OF TREASURE and beyond that a tunnel \nthrough the mountain to the leading to the \nCASTLE.BOWSER turns and looks at MARIO \nhead down snorting swiping his left foot behind \nhim suddenly BOWSER charges at Mario like a raging bull \n \nWHAT DOES MARIO DO NEXT?\nANSWER 1,2 OR 3 \n***1.JUMP OVER THE PIT TO SAFETY*** \n\n***2.USE HIS MUSHROOM POWER TO CHARGE BACK AT BOWSER***\n\n***3.JUMP ON BOWSERS HEAD***\n")
     if lev2_opt == "1":
         print("MARIO makes it to the other side of the pit \nand then runs out into the dark forest \nthere he meets GLENDA the large forest spider, \nwho informs MARIO he will make a delicious meal \nfor her children.\n \n****GAME OVER****")
         return scrolls, False
@@ -54,11 +51,11 @@ def level2(scrolls, mario_alive):
         print("Invalid input. Game over.")
         return scrolls, False
 
-def level3(scrolls, mario_alive):
-    print("\nCHOICE3 castle in the distance ")
-    lev3_opt = input("\n1. Challenge bowser\n2. Go to next level\n3. Enter the castle\n")
+def level3(scrolls):
+
+    lev3_opt = input("MARIO escapes the cave unharmed  he see’s the castle in the distance.  It is grand and pink, but there’s something wrong. There’s nobody there everything quite it seems abandoned. He listens carefully and can here a faint voice in the distance shouting help. What does MARIO do next?\n1.AVOID THE CASTLE\n2. APPOROCH THE CASTLE DIRECTLY \n3.ACT CAUTIOUSLY AND TRY TO FIND A DIFFERT WAY IN")
     if lev3_opt == "1":
-        print("Mario fails to complete his quest ")
+        print("")
         print("***GAME OVER***")
         return scrolls, False
     elif lev3_opt == "2":
