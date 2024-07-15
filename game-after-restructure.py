@@ -17,7 +17,7 @@ def game():
     print("Thanks for playing Mario's adventure!")
 
 def start():
-    print("\nYOU ARE MARIO STORY 12345")
+    print("\nMARIO'S MAGIC ADVENTURE")
 
 def level1(scrolls):
     lev1_opt = input("Fork in the Road: Mario stops at a split in the road. He sees three different paths ahead: On the left, a foggy path leads into a dark forest. Strange sounds come from the mist, making Mario wonder what's hiding there. On the right, a bright, sunny path goes over green hills. It looks nice, with pretty flowers and shiny coins, but maybe it's too good to be true? In the middle, an odd path has old stones with weird marks on them. The air feels funny here, like there might be magic around. Each path looks interesting but could be dangerous too. Which way should Mario go? Into the spooky fog, along the sunny hills, or down the strange middle path?\n1.TAKE THE FOOGY PATH INTO THE DARK FOREST\n2.FOLLOW THE SUNNY PATH OVER THE GREEN HILLS\n3.CHOOSE THE MIDDLE PATH WITH THE STRANGE STONES\n")
