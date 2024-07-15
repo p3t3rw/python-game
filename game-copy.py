@@ -2,20 +2,20 @@ scrolls=0
 restart_game=True
 introduction= " \nYOU ARE MARIO STORY"
 print(introduction)
-lev1_opt=input("CHOICE 1 FORK IN THE ROAD please answer 1,2 or 3")
+lev1_opt=input("Fork in the Road:Mario stops at a split in the road. He sees three different paths ahead: On the left, a foggy path leads into a dark forest. Strange sounds come from the mist, making Mario wonder what's hiding there.On the right, a bright, sunny path goes over green hills. It looks nice, with pretty flowers and shiny coins, but maybe it's too good to be true?In the middle, an odd path has old stones with weird marks on them. The air feels funny here, like there might be magic around.Each path looks interesting but could be dangerous too. Which way should Mario go? Into the spooky fog, along the sunny hills, or down the strange middle path?\n1.Take the foggy path into the dark forest\n2.Follow the sunny path over the green hills\n3.Choose the middle path with the strange stones")
 
 if lev1_opt== "1":
-    print ("Mario fell into a pit ")
+    print ("Mario walks into the thick fog. He can't see where he's going and suddenly falls into a deep pit. Game Over!")
     print("***GAME OVER***")
     quit()
 
 elif lev1_opt== "2":
       scrolls= +1 
-      print("story: found hidden scroll ")
+      print("Mario happily walks on the sunny path. He finds some helpful power-ups along the way and safely makes it to the next part of his journey. Mario continues his adventure!")
 
 elif lev1_opt== "3":
      
-     print( "WIN Mario continues his journey ")
+     print( "As Mario walks past the old stones, he notices something tucked behind one of them. It's an ancient scroll! Mario carefully takes the scroll and reads it, learning some useful info. Then he moves on to the next part of his quest.")
       
           
 
